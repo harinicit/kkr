@@ -1,0 +1,106 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+}
+
+.image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px; /* Space between logo and company info */
+    align-self: flex-start; /* Align logo to the top left */
+}
+
+.company-info {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.company-name {
+    font-size: 4em;
+    color: #ff6347; /* Example color (tomato) */
+    margin: 0;
+}
+
+.company-name:hover {
+    color: #ffa07a; /* Example hover color (light salmon) */
+}
+
+.company-slogan {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+main {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-gallery img {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
